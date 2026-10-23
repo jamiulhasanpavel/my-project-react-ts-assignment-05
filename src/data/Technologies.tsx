@@ -1,12 +1,4 @@
-type Technology = {
-  id: number;
-  name: string;
-  description: string;
-  category: string;
-  level: string;
-  rating: number;
-  badge: string;
-};
+import type { Technology } from "../App";
 
 type TechnologyListProps = {
   onAdd: (technology: Technology) => void;
@@ -137,7 +129,7 @@ function TechnologyList({ onAdd }: TechnologyListProps) {
   ];
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-12">
+    <section id="technologies" className="mx-auto max-w-6xl px-6 py-12">
       <div className="mb-8">
         <h2 className="text-2xl font-bold">
           Explore the{" "}

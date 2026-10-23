@@ -7,7 +7,7 @@ type YourStackProps = {
 
 function YourStack({ stack, onRemove }: YourStackProps) {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-12">
+    <section id="your-stack" className="mx-auto max-w-6xl px-6 py-12">
       <div className="rounded-lg border p-6">
         <h2 className="text-xl font-bold">
           Your Stack

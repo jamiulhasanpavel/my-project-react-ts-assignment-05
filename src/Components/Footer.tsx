@@ -2,7 +2,7 @@ import logo from "../assets/logo-text.png";
 
 function Footer() {
   return (
-    <footer className="border-t border-gray-200">
+    <footer id="about" className="border-t border-gray-200">
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex flex-col justify-between gap-6 md:flex-row">
 

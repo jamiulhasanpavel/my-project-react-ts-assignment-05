@@ -1,8 +1,12 @@
 import bannerStack from "../assets/banner-stack.png";
 
 function Hero() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
-    <section className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 px-6 py-16 md:flex-row">
+    <section id="home" className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 px-6 py-16 md:flex-row">
 
       {/* Left */}
       <div className="max-w-xl">
@@ -21,11 +25,19 @@ function Hero() {
         </p>
 
         <div className="mt-6 flex gap-3">
-          <button className="rounded bg-orange-500 px-5 py-2 text-sm font-medium text-white">
+          <button
+            type="button"
+            onClick={() => scrollToSection("technologies")}
+            className="rounded bg-orange-500 px-5 py-2 text-sm font-medium text-white"
+          >
             Explore Technologies
           </button>
 
-          <button className="rounded border border-gray-200 px-5 py-2 text-sm">
+          <button
+            type="button"
+            onClick={() => scrollToSection("about")}
+            className="rounded border border-gray-200 px-5 py-2 text-sm"
+          >
             Learn More
           </button>
         </div>
