@@ -129,7 +129,7 @@ function TechnologyList({ onAdd }: TechnologyListProps) {
   ];
 
   return (
-    <section id="technologies" className="mx-auto max-w-6xl px-6 py-12">
+    <section id="technologies" className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
       <div className="mb-8">
         <h2 className="text-2xl font-bold">
           Explore the{" "}
@@ -145,7 +145,7 @@ function TechnologyList({ onAdd }: TechnologyListProps) {
         {technologies.map((technology) => (
           <div
             key={technology.id}
-            className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm"
+            className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm sm:p-7"
           >
             {/* Top */}
             <div className="flex items-start justify-between">
@@ -159,17 +159,17 @@ function TechnologyList({ onAdd }: TechnologyListProps) {
             </div>
 
             {/* Name */}
-            <h3 className="mt-7 text-2xl font-semibold">
+            <h3 className="mt-6 text-xl font-semibold sm:mt-7 sm:text-2xl">
               {technology.name}
             </h3>
 
             {/* Description */}
-            <p className="mt-3 min-h-[72px] text-base leading-7 text-gray-500">
+            <p className="mt-3 text-sm leading-6 text-gray-500 sm:min-h-[72px] sm:text-base sm:leading-7">
               {technology.description}
             </p>
 
             {/* Info */}
-            <div className="mt-5 flex items-center justify-between border-t border-gray-100 pt-3 text-sm">
+            <div className="mt-5 flex flex-wrap items-center justify-between gap-2 border-t border-gray-100 pt-3 text-sm">
               <span className="rounded-md bg-gray-100 px-3 py-1 text-gray-600">
                 {technology.category}
               </span>

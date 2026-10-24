@@ -7,8 +7,8 @@ type YourStackProps = {
 
 function YourStack({ stack, onRemove }: YourStackProps) {
   return (
-    <section id="your-stack" className="mx-auto max-w-6xl px-6 py-12">
-      <div className="rounded-lg border p-6">
+    <section id="your-stack" className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+      <div className="rounded-lg border p-4 sm:p-6">
         <h2 className="text-xl font-bold">
           Your Stack
         </h2>
@@ -22,7 +22,7 @@ function YourStack({ stack, onRemove }: YourStackProps) {
             {stack.map((technology, index) => (
               <div
                 key={`${technology.name}-${index}`}
-                className="flex items-start justify-between gap-4 rounded border p-4"
+                className="flex flex-col items-start justify-between gap-3 rounded border p-4 sm:flex-row sm:items-center sm:gap-4"
               >
                 <div>
                   <h3 className="font-bold">

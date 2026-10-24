@@ -6,11 +6,11 @@ function Hero() {
   };
 
   return (
-    <section id="home" className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-10 px-6 py-16 md:flex-row">
+    <section id="home" className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-8 px-4 py-10 sm:gap-10 sm:px-6 sm:py-16 md:flex-row">
 
       {/* Left */}
       <div className="max-w-xl">
-        <h1 className="text-4xl font-bold leading-tight md:text-5xl">
+        <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
           Build Your Ideal
           <br />
           <span className="text-pink-500">
@@ -24,7 +24,7 @@ function Hero() {
           that fits your next project.
         </p>
 
-        <div className="mt-6 flex gap-3">
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row">
           <button
             type="button"
             onClick={() => scrollToSection("technologies")}
@@ -44,11 +44,11 @@ function Hero() {
       </div>
 
       {/* Right */}
-      <div>
+      <div className="w-full max-w-sm md:w-auto">
         <img
           src={bannerStack}
           alt="Development Stack"
-          className="w-80"
+          className="h-auto w-full md:w-80"
         />
       </div>
 
